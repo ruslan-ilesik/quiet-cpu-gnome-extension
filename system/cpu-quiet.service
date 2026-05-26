@@ -1,0 +1,13 @@
+[Unit]
+Description=CPU Quiet Mode Daemon
+After=multi-user.target
+
+[Service]
+Type=dbus
+BusName=org.lesikr.cpuquiet
+ExecStart=/usr/local/bin/cpu-quiet-daemon
+Restart=on-failure
+User=root
+
+[Install]
+WantedBy=multi-user.target

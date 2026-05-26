@@ -1,0 +1,7 @@
+{
+  "uuid": "cpu-quiet@lesikr.com",
+  "name": "CPU Quiet Mode",
+  "description": "Early CPU throttling with D-Bus control",
+  "shell-version": ["45", "46", "47", "48"],
+  "version": 2
+}

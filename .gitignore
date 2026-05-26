@@ -1,0 +1,27 @@
+# Build artifacts (daemon)
+daemon/CMakeCache.txt
+daemon/CMakeFiles/
+daemon/Makefile
+daemon/cmake_install.cmake
+daemon/cpu-quiet-daemon
+daemon/*.o
+
+# Extension compiled schemas
+extension/schemas/*.gschemas.valid
+extension/schemas/*.gschemas.compiled
+
+# User settings (local)
+*.swp
+*~
+*.bak
+
+# IDE / editor folders
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.cpuquiet" path="/org/gnome/shell/extensions/cpuquiet/">
+    <key name="min-freq" type="i">
+      <default>800000</default>
+      <summary>Minimum CPU frequency (kHz)</summary>
+    </key>
+    <key name="throttle-start" type="i">
+      <default>50</default>
+      <summary>Temperature at which throttling starts (°C)</summary>
+    </key>
+    <key name="max-temp" type="i">
+      <default>70</default>
+      <summary>Temperature at which minimum frequency is forced (°C)</summary>
+    </key>
+    <key name="enabled" type="b">
+      <default>false</default>
+      <summary>Whether quiet mode is active</summary>
+    </key>
+  </schema>
+</schemalist>
