@@ -353,7 +353,7 @@ export default class Extension {
         toggle.connect('toggled', onToggle);
         indicator.menu.addMenuItem(toggle);
         Main.panel.addToStatusArea('cpuquiet', indicator);
-        timer = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1, () => {
+        timer = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 2, () => {
             update();
             return true;
         });

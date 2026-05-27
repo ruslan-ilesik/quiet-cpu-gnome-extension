@@ -279,7 +279,7 @@ static const GDBusInterfaceVTable interface_vtable = {
         int last = -1;
         while (true) {
             if (!cfg.enabled) {
-                std::this_thread::sleep_for(std::chrono::seconds(2));
+                std::this_thread::sleep_for(std::chrono::seconds(5));
                 continue;
             }
             int temp = read_temp();
@@ -288,7 +288,7 @@ static const GDBusInterfaceVTable interface_vtable = {
                 set_freq(freq);
                 last = freq;
             }
-            std::this_thread::sleep_for(std::chrono::milliseconds(800));
+            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     }).detach();
 
