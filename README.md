@@ -35,7 +35,7 @@ Two components communicate via D‑Bus:
 ### 1. Build and install the daemon
 
 ```bash
-git clone https://github.com/your-username/cpu-quiet-mode.git
+git clone https://github.com/ruslan-ilesik/quiet-cpu-gnome-extension.git
 cd cpu-quiet-mode
 bash tools/install-daemon.sh
 bash tools/install-extension.sh
